@@ -1,1 +1,73 @@
-<pre>under construction</pre>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergey Wif Hat (SIF)</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 25px;
+            height: 0;
+        }
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .audio-element {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+        
+        .blink {
+            animation: blink 1s step-start 0s infinite;
+            color: #ff0000; /* Change the color if needed */
+        }
+    </style>
+</head>
+<body>
+
+<header class="container-fluid text-center">
+    <h1>Sergey Wif Hat</h1>
+    <p class="blink">You are still early</p>
+</header>
+
+<section class="container">
+    <article>
+        <div class="video-container">
+            <video class="video-background" autoplay muted playsinline loop src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
+        </div>
+        <h2>Sergey Wif Hat</h2>
+    </article>
+
+    <article>
+        <ul class="list-unstyled text-center">
+            <!-- Bootstrap buttons within list items -->
+            <li class="mb-2"><a class="btn btn-primary" href="https://birdeye.so/token/xyz?chain=solana" target="_blank">Birdeye</a></li>
+            <li class="mb-2"><a class="btn btn-secondary" href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=xyz&fixed=in" target="_blank">Raydium</a></li>
+            <li class="mb-2"><a class="btn btn-success" href="https://solscan.io/token/xyz" target="_blank">Solscan</a></li>
+            <li class="mb-2"><a class="btn btn-info" href="https://t.me/sif" target="_blank">Telegram</a></li>
+            <li class="mb-2"><a class="btn btn-warning" href="https://x.com/sif" target="_blank">X</a></li>
+        </ul>
+    </article>
+
+    <footer class="container text-center">
+        <audio class="audio-element" controls autoplay preload="upload">
+            <source src="https://ucc3425fa6328fa2deaa9aa03453.dl.dropboxusercontent.com/cd/0/inline/CLQj6jz7phi9XQY7XE9xpcTZ_mFO8hvmk4FNbKIE1DGpctjHPpwJGCYg3V8-dOG9aY4zK5zia5s3K3_4Y3pveQ_b4FD3ko-rVi6IcGKfCsIFYARdFkSbKaiP9CuSZ759VxJj0DvpMlqT3qfvqCXrcCvu/file#" type="audio/mp3">
+        </audio>
+    </footer>
+</section>
+
+</body>
+</html>
